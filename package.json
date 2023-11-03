@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prebuild": "jest"
+    "prebuild": "npm run test -- --passWithNoTests && jest"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
