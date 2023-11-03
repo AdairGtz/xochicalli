@@ -41,3 +41,8 @@ jobs:
         run: |
           # Aquí coloca el comando o script que necesitas para implementar tu proyecto en tu servicio de hosting (por ejemplo, Firebase Hosting).
 
+          - run: npm ci
+          - run: npm list vitest
+          - run: npm run build
+          - run: npm run test -- --passWithNoTests && jest
+          
