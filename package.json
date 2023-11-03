@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "vite && serve dist -s -n -L -p $PORT",
     "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint --max-warnings=0 src",
@@ -37,6 +37,7 @@
     "react-tagsinput": "^3.20.3",
     "reactjs-credit-card": "^1.0.6",
     "recharts": "^2.4.3",
+    "serve": "^14.2.1",
     "uuid": "^9.0.0",
     "yup": "^1.0.2"
   },
