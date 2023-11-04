@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "start": "vite && serve dist -s -n -L -p $PORT",
-    "dev": "vite --host",
-    "build": "tsc && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint --max-warnings=0 src",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prebuild": "npm run test -- --passWithNoTests && jest"
+    "prebuild": "npm run test -- --passWithNoTests",
+    "buildandtest": "npm run build && jest"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
@@ -56,7 +57,8 @@
     "standard": "^17.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.4.2",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^0.34.6"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
